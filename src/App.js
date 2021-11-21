@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  let [글제목, 글제목변경]= useState(["남자 코트 추천","강남 우동 맛집"]);
+  let [글제목, 글제목변경]= useState(["남자 코트 추천","선릉 맛집", "회사가기 싫은 이유"]);
   
   return (
     <div className="App">
@@ -20,6 +20,11 @@ function App() {
       <div className="list">
         <h3> { 글제목[1] } </h3>
         <p>3월 10일 발행</p>
+        <hr/>
+      </div>
+      <div className="list">
+        <h3> { 글제목[2] } </h3>
+        <p>지금 발행</p>
         <hr/>
       </div>
 
